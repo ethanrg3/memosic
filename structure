@@ -1,0 +1,11 @@
+memosic/
+├── app/
+│   ├── __init__.py
+│   ├── main.py            # Flask or FastAPI entrypoint
+│   ├── transcribe.py      # Whisper transcription logic
+│   ├── summarize.py       # Summarization with transformers
+│   └── utils.py           # Audio conversion, chunking, etc.
+├── Dockerfile
+├── requirements.txt
+├── README.md
+└── .gitignore
