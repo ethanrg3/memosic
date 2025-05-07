@@ -1,0 +1,83 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #1db954;
+}
+
+.dropzone {
+  padding: 2rem;
+  border: 2px dashed #444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.dropzone.active {
+  background: #1db95422;
+  border-color: #1db954;
+}
+
+.dropzone p {
+  margin: 0;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.spinner {
+  margin: 1.5rem auto;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  display: inline-block;
+  animation: bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 { animation-delay: -0.32s; }
+.spinner .bounce2 { animation-delay: -0.16s; }
+
+@keyframes bouncedelay {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+.result {
+  margin-top: 2rem;
+  background: #222;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.result h2 {
+  margin-top: 0;
+  color: #1db954;
+}
+
+.error {
+  margin-top: 1rem;
+  color: #f44336;
+}
